@@ -79,8 +79,8 @@ On_IWhite="\[\033[0;107m\]"   # White
 #
 # Run some Git utility scripts
 #
-source ~/git-completion.bash
-source ~/git-prompt.sh
+source /usr/local/git/contrib/completion/git-prompt.sh
+source /usr/local/git/contrib/completion/git-completion.bash
 
 #
 # Environment variables
