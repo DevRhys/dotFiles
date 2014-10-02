@@ -112,7 +112,7 @@ PathFull="\W"
 NewLine="\n"
 Jobs="\j"
 User="\u"
-Host="[\H]"
+Host="[\h]"
 
 #
 # Customization of the prompt, mostly Git related
