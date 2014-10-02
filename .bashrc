@@ -112,11 +112,12 @@ PathFull="\W"
 NewLine="\n"
 Jobs="\j"
 User="\u"
+Host="[\H]"
 
 #
 # Customization of the prompt, mostly Git related
 #
-export PS1=$BIPurple$User$Color_Off'$(git branch &>/dev/null;\
+export PS1=$BIPurple$User$BICyan$Host$Color_Off'$(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
   echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
   if [ "$?" -eq "0" ]; then \
