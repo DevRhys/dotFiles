@@ -1,3 +1,16 @@
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+        [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
+#
+# Run some Git utility scripts
+#
+source /usr/local/git/contrib/completion/git-prompt.sh
+source /usr/local/git/contrib/completion/git-completion.bash
 
 #
 # Color constants
@@ -77,12 +90,6 @@ On_ICyan="\[\033[0;106m\]"    # Cyan
 On_IWhite="\[\033[0;107m\]"   # White
 
 #
-# Run some Git utility scripts
-#
-source /usr/local/git/contrib/completion/git-prompt.sh
-source /usr/local/git/contrib/completion/git-completion.bash
-
-#
 # Environment variables
 #
 export EDITOR=/usr/bin/emacs
@@ -94,13 +101,6 @@ HISTCONTROL='ignorespace:ignoredups:'
 HISTFILESIZE='2000'
 HISTSIZE='2000'
 FCEDIT='emacs'
-
-#PS1="${BIGreen}[${BBlue}\u${BIGreen}] ${BIPurple}\W${BIRed}\$(__git_ps1)${BIGreen} $ ${Color_Off}"
-
-#
-# Aliases
-#
-alias dir='ls -alF'
 
 #
 # Variables
