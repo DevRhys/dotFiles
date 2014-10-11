@@ -94,7 +94,7 @@ HISTCONTROL='ignorespace:ignoredups:'
 HISTFILESIZE='2000'
 HISTSIZE='2000'
 FCEDIT='emacs'
-PATH=$PATH":/Users/Rhys"
+
 #PS1="${BIGreen}[${BBlue}\u${BIGreen}] ${BIPurple}\W${BIRed}\$(__git_ps1)${BIGreen} $ ${Color_Off}"
 
 #
