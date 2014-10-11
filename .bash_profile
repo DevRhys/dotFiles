@@ -1,2 +1,2 @@
-PATH=$PATH:~/ConfigurationFiles
+PATH=$PATH:~/dotfiles/rhys/dotfiles
 source ~/.bashrc
